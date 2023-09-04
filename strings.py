@@ -87,3 +87,19 @@ prc=7.5
 with_tax=prc*1.09
 print("Base price is: ${:.2f}. with tax: ${:.2f}".format(prc,with_tax))
 
+
+# 
+example = "format() method"
+
+formatted_string = "this is an example of using the {} on a string".format(example)
+
+print(formatted_string)
+
+# 
+first = "apple"
+second = "banana"
+third = "carrot"
+
+formatted_string = "{0} {2} {1}".format(first, second, third)
+
+print(formatted_string)
