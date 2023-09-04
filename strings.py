@@ -73,4 +73,17 @@ print("and".isnumeric()) #out: False
 print(int("1234")+int("1234")) #out: 2468
 print(" ".join(["I","am","a","boy"])) #out: I am a boy
 print("....".join(["I","am","a","boy"])) #out: I....am....a....boy
-print("I am a boy".split()) #out: ["I","am","a","boy"]
+print("I am a boy".split()) #out: ["I","am","a","boy"]\
+
+
+# Format method .format()
+nam="manny"
+number=len(nam)*3
+print("Hello {},your lucky number is {}".format(nam, number))
+print("Your lucky number is {number}, {name}".format(name=nam, number=len(nam)*3))
+
+# formatting expression
+prc=7.5
+with_tax=prc*1.09
+print("Base price is: ${:.2f}. with tax: ${:.2f}".format(prc,with_tax))
+
