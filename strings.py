@@ -52,3 +52,25 @@ def replace_domain(email, old_domain, new_domain):
         new_email = email[:index] + "@" + new_domain
         return new_email
     return email
+# .upper() .lower() methods in string
+answer = "YES"
+if answer.lower() == "yes":
+    print("User said yes")
+
+# .strip() method
+print(" yes ".strip()) # out: 'yes'
+print(" yes ".lstrip()) # out: 'yes '
+print(" yes ".rstrip()) # out: ' yes'
+
+# .count()
+print("The number of string is something".count("s")) #out: 3 
+# .endswith()
+print("Forest".endswith("rest")) #out: True
+print("Forest".endswith("are")) #out: False
+# .isnumeric()
+print("12345".isnumeric()) #out: True
+print("and".isnumeric()) #out: False
+print(int("1234")+int("1234")) #out: 2468
+print(" ".join(["I","am","a","boy"])) #out: I am a boy
+print("....".join(["I","am","a","boy"])) #out: I....am....a....boy
+print("I am a boy".split()) #out: ["I","am","a","boy"]
